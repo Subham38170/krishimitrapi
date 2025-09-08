@@ -51,14 +51,7 @@ def about():
     )
 
 
-@app.get('/about')
-def get_about():
-    return {'About ': 'This is the api for krishimitra'}
 
-
-@app.post('/sentence')
-def translate(sen: Message):
-    return {'Your data is ': sen.msg}
 
 
 @app.post('/mandiprices')
