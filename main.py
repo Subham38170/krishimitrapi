@@ -11,3 +11,8 @@ def about():
         status_code=200,
         content={'Message':'Welcome to this krishi Mitra App'}
     )
+
+
+@app.get('/about')
+def get_about():
+    return {'About ': 'This is the api for krishimitra'}
